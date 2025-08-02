@@ -38,7 +38,3 @@ D-El DTD se trata de la definicion del tipo de documento, por ej. version de HTM
 E-Los metadatos, en este caso de HTML, son datos sobre el documento que no son el contenido del mismo
 en si, podemos pensarlos como "datos sobre los datos". En HTML los metadatos con la etiqueta
 <META ... > dentro de la etiqueta <HEAD>...</HEAD> del documento utilizando los atributos necesarios.
-
-esto es nuevo
-  
-
