@@ -1,4 +1,3 @@
-1) 
 A- HTML es un lenguaje de marcado,su creador es Tim Berners-Lee y sus siglas significan HYPERTEX MARKUP 
 LANGUAGE,y es el lenguaje standar para el desarrollo de sitios web, a lo largo de su historia tuvo
 las siguientes versiones:
