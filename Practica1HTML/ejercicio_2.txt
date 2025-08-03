@@ -1,18 +1,18 @@
-2) A_ comando: <!-- Código controlado el día 12/08/2009 -->
-        -Seccion donde se coloca: Se puede colocar en cualquiera porque es un comentario.
-        -efecto sobre el sitio: ninguno.
-        -etiqueta: <!-- ... --> etiqueta de comentario.
-        -Atributos: no tiene.
-        -Obligatorio?: No tiene atributos.
-        -Contenido: Código controlado el día 12/08/2009.
+    A_ comando: <!-- Código controlado el día 12/08/2009 -->
+            -Seccion donde se coloca: Se puede colocar en cualquiera porque es un comentario.
+            -efecto sobre el sitio: ninguno.
+            -etiqueta: <!-- ... --> etiqueta de comentario.
+            -Atributos: no tiene.
+            -Obligatorio?: No tiene atributos.
+            -Contenido: Código controlado el día 12/08/2009.
 
     B_ comando: <div id="bloque1">Contenido del bloque1</div>
-        -Seccion donde se coloca: Se coloca dentro de la seccion Body.
-        -efecto sobre el sitio: escribe y muestra en un bloque el contenido que se le haya añadido.
-        -etiqueta: <div>...</div> etiqueta de bloque.
-        -atributos:
-            + nombre: id | valor: "bloque1" | obligatorio: no.
-        -Contenido:Contenido del bloque1
+            -Seccion donde se coloca: Se coloca dentro de la seccion Body.
+            -efecto sobre el sitio: escribe y muestra en un bloque el contenido que se le haya añadido.
+            -etiqueta: <div>...</div> etiqueta de bloque.
+            -atributos:
+                + nombre: id | valor: "bloque1" | obligatorio: no.
+            -Contenido:Contenido del bloque1
 
     C_ comando: <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
             -seccion donde se coloca: Se coloca dentro de la seccion Body.
@@ -79,7 +79,76 @@
         </table>
 
             -seccion donde se coloca: Se coloca en la seccion Body.
-            -efecto sobre el sitio: Muestra una tabla con titulo "Titulo", columnas "A","B","C" y filas "1º", "2º"
+            -efecto sobre el sitio: Muestra una tabla con titulo "Titulo", columnas "A","B","C"(simuladas) y filas "1º", "2º"(simuladas)
+
             -etiqueta_1: <table>...</table> etiqueta de tabla.
             -atributos:
+                +nombre: width | valor: "200" | obligatorio: no.
+                +nombre: summary | valor: "Datos correspondientes al ejercicio vencido" | obligatorio: no.
+            -contenidos:
+                        <caption align="top"> Título </caption>
+                        <tr>
+                                <th scope="col">&nbsp;</th>
+                                <th scope="col">A</th>
+                                <th scope="col">B</th>
+                                <th scope="col">C</th>
+                        </tr>
+                        <tr>
+                                <th scope="row">1º</th>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                                <th scope="row">2º</th>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                        </tr>
+
+            -etiqueta_2: <caption>...</caption> etiqueta de titulo de tabla.
+            -atributos:
+                +nombre: align | valor: "top" | obligatorio: no.
+            -contenido: Título.
+
+            -etiqueta_3: <tr>...</tr> etiqueta de fila.
+            -atributos: ninguno.
+            -contenidos:
+                primer aparicion:
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">A</th>
+                        <th scope="col">B</th>
+                        <th scope="col">C</th>
+                
+                segunda aparicion:
+                        <th scope="row">1º</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+
+                tercer aparicion:
+                        <th scope="row">2º</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+            
+            -etiqueta_4: <th>...</th> etiqueta de cabecera de columna.
+            -atributos:
+                +nombre: scope | valores: ("col","row") | obligatorio: no(pero muy recomendado por cuestiones de accesibilidad.).
+            -contenidos:
+                        &nbsp
+                        A
+                        B
+                        C
+                        1º
+                        2º
+            
+            -etiqueta_5: <td>...</td> etiqueta de dato de tabla(table data).
+            -atributos: ninguno.
+            -contenidos:
+                        &nbsp;
+            
+
+
+
                 
