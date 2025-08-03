@@ -13,7 +13,7 @@ B- Los Principios basicos que la W3C recomienda seguir para la creacion de docum
     2_Protocolos, para acceder a recursos con nombre en la Web.
     3_Hipertexto, para navegar fácilmente entre recursos
 
-B-alt Los Principios basicos que la W3C recomienda seguir para la creacion de documentos HTML son:
+B-alt-1 Los Principios basicos que la W3C recomienda seguir para la creacion de documentos HTML son:
     1_Separacion de contenido y presentacion.
     2_Uso correcto de la semantica.
     3_Estructura jerarquica clara.
@@ -21,6 +21,11 @@ B-alt Los Principios basicos que la W3C recomienda seguir para la creacion de do
     5_Compatibilidad y accesibilidad.
     6_Uso de estándares y tecnologías abiertas.
     7_Internacionalización y codificación adecuada.
+
+B-alt-2 Los Principios basicos que la W3C recomienda seguir para la creacion de documentos HTML son:
+    1_Separar estructura y presentación
+    2_Considerar la accesibilidad universal a la Web
+    3_Ayudar con la representación incremental
 
 C-En las especificaciones HTML un atributo o elemento se considera desaprobado cuando por la
  aparicion de nuevas estructuras el mismo queda anticuado. En cambio, se considera obsoleto
