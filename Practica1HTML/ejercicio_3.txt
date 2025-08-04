@@ -1,0 +1,38 @@
+    A_  -<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+            +Muesta un enlace clickeable que dice "Click aquí para ir a Google".
+            +Solo posee como Atributo "href" y como valor la URL "http://www.google.com.ar" por lo que al hacer Click
+             redirije a la pagina de google en la misma pestaña.
+
+        -<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+            +Muesta un enlace clickeable que dice "Click aquí para ir a Google".
+            +Ademas de tener los mismos atributos que en el segmento anterior ahora tambien posee "target" con el valor "_blank"
+             especificando que la URL debe abrirse en una nueva pestaña.
+
+        -<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+            +No muestra nada porque ademas de no tener contenido la etiqueta no esta cerrada.
+    
+        -<a href="#">Click aquí para ir a Google</a>
+            +muestra un enlace clickeable que dice "Click aquí para ir a Google".
+            +en lugar de una URL se le agrego el valor "#" al atributo lo cual genera que no redirija a ninguna parte.
+
+        <a href="#arriba">Click aquí para volver arriba</a>
+        <a name="arriba" id="arriba"></a>
+            +muestra un enlace clickeable que dice "Click aquí para volver arriba".
+            +en este caso el enlace redirije a otra parte dentro de la misma pagina debido a que se declaro un ancla a la cual se enlazo
+             el enlace.
+
+    B_  -<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+            +Muesta un enlace clickeable que dice "Click aquí" que redirije a google y inserta una imagen vacia("im1.jpg" no corresponde
+             a nada) por lo que se ve en su lugar el texto "imagen1".
+
+        -<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+            +Muesta el texto "Click aquí" y un enlace clickeable enlazado a una imagen(en este caso a su texto alternativo) que redirije
+             a google.
+        
+        -<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+            +Muestra un enlace clickeable enlazado a una imagen(en este caso a su texto alternativo) y al texto "Click aquí" que redirije
+             a google.
+
+        -<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a><a href="http://www.google.com.ar">Click aquí</a></p>
+            +Muestra dos enlaces clickeables enlazados a una imagen(en este caso a su texto alternativo) y al texto "Click aquí"
+             respectivamente donde ambos redirijen a goolge.
