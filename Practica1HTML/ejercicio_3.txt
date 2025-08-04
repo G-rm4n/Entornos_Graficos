@@ -35,4 +35,115 @@
 
         -<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a><a href="http://www.google.com.ar">Click aquí</a></p>
             +Muestra dos enlaces clickeables enlazados a una imagen(en este caso a su texto alternativo) y al texto "Click aquí"
-             respectivamente donde ambos redirijen a goolge.
+             respectivamente donde ambos redirijen a google.
+    
+    C_ -<ul>
+            <li>xxx</li>
+            <li>yyy</li>
+            <li>zzz</li>
+        </ul>
+            +Muestra una lista sin titulo compuesta por los elementos "xxx", "yyy" y "zzz" pero sin enumerar(o ordenar)
+             porque usa <ul> lo cual es la etiqueta para listas no ordenadas.
+
+        -<ol>
+            <li>xxx</li>
+            <li>yyy</li>
+            <li>zzz</li>
+        </ol>
+            +Muestra una lista sin titulo compuesta por los elementos "xxx", "yyy" y "zzz" enumerada
+             porque usa <ol> lo cual es la etiqueta para listas ordenadas o enumeradas.
+
+        -<ol>
+            <li>xxx</li>
+         </ol>
+         <ol>
+            <li value="2">yyy</li>
+         </ol>
+         <ol>
+         <li value="3">zzz</li>
+         </ol>
+        
+            +Muestra 3 listas enumeradas distintas cada una compuestas por los elementos "xxx", "yyy" y "zzz"
+             respectivamente.
+
+        -<blockquote>
+         <p>1. xxx<br />
+         2. yyy<br />
+         3. zzz</p>
+         </blockquote>
+
+            +Muestra una "lista enumerada" compuesta por los elementos "xxx", "yyy" y "zzz" pero solo a nivel visual
+             porque no es una lista sino un bloque de cita.
+
+    D_  -<table border="1" width="300">
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+        </tr>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+        </tr>
+        <tr>
+            <td>Celda 3</td>
+            <td>Celda 4</td>
+        </tr>
+        </table>
+
+            +Muestra una tabla con bordes (debido al atributo border) con columnas llamadas "Columna 1" y
+            "Columna 2" con celdas llamadas "celda 1", "celda 2", "celda 3" y "celda 4", con la tabla teniendo
+            un ancho de "300" pixeles (dado por el atributo width).
+
+        -<table border="1" width="300">
+         <tr>
+         <td><div align="center"><strong>Columna1</strong></div></td>
+         <td><div align="center"><strong>Columna 2</strong></div></td>
+         </tr>
+         <tr>
+         <td>Celda 1</td>
+         <td>Celda 2</td>
+         </tr>
+         <tr>
+         <td>Celda 3</td>
+         <td>Celda 4</td>
+         </tr>
+         </table> 
+
+            +Muesta exactamente la misma lista que en el segmento anterior solo que no utiliza las etiquetas de cabecera
+             y solo las simula utilizando atributos de la etiqueta <td>.
+
+    E_  -<table width="200">
+        <caption>Título</caption>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+        </table>
+
+            +Muestra una tabla de 200 pixeles de ancho donde cada celda esta vacia pero coloreada con el tono de gris claro
+             "#dddddd" en formato hexadecimal.
+
+        <table width="200">
+        <tr>
+            <td colspan="3"><div align="center">Título</div></td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+        </table>
+
+            +Muestra exactamente la misma tabla que en el segmento anterior solo que no utiliza la etiqueta <caption> para el titulo de la
+             tabla y lo simula usando atributos de la etiqueta <td>.
