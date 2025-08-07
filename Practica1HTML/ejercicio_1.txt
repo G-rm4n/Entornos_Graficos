@@ -5,7 +5,7 @@ las siguientes versiones:
     2_HTML 2.0:Lanzada en 1995.
     3_HTML 3.0:Lanzada en 1997.
     4_HTML 4.01:Lanzada en 1999.
-    5_HTML5 : Lanzada en 2014(La version actual).
+    5_HTML5 : Lanzada en 2014(La version actual). 
 
 B- Los Principios basicos que la W3C recomienda seguir para la creacion de documentos HTML son:
     1_Separar estructura y presentación
