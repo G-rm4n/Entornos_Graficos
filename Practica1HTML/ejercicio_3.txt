@@ -15,11 +15,14 @@
             +muestra un enlace clickeable que dice "Click aquí para ir a Google".
             +en lugar de una URL se le agrego el valor "#" al atributo lo cual genera que no redirija a ninguna parte.
 
-        <a href="#arriba">Click aquí para volver arriba</a>
-        <a name="arriba" id="arriba"></a>
-            +muestra un enlace clickeable que dice "Click aquí para volver arriba".
-            +en este caso el enlace redirije a otra parte dentro de la misma pagina debido a que se declaro un ancla a la cual se enlazo
-             el enlace.
+        -<a href="#arriba">Click aquí para volver arriba</a>
+            ++muestra un enlace clickeable que dice "Click aquí para volver arriba" que lleva a un ancla.
+
+        -<a name="arriba" id="arriba"></a>
+            +No muestra nada porque es un ancla vacia, pero al hacer click en el enlace del segmento anterior
+             redirije a este ancla.
+
+
 
     B_  -<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
             +Muesta un enlace clickeable que dice "Click aquí" que redirije a google y inserta una imagen vacia("im1.jpg" no corresponde
@@ -37,6 +40,9 @@
             +Muestra dos enlaces clickeables enlazados a una imagen(en este caso a su texto alternativo) y al texto "Click aquí"
              respectivamente donde ambos redirijen a google.
     
+
+
+
     C_ -<ul>
             <li>xxx</li>
             <li>yyy</li>
@@ -45,6 +51,8 @@
             +Muestra una lista sin titulo compuesta por los elementos "xxx", "yyy" y "zzz" pero sin enumerar(o ordenar)
              porque usa <ul> lo cual es la etiqueta para listas no ordenadas.
 
+
+
         -<ol>
             <li>xxx</li>
             <li>yyy</li>
@@ -52,6 +60,8 @@
         </ol>
             +Muestra una lista sin titulo compuesta por los elementos "xxx", "yyy" y "zzz" enumerada
              porque usa <ol> lo cual es la etiqueta para listas ordenadas o enumeradas.
+
+
 
         -<ol>
             <li>xxx</li>
@@ -66,6 +76,8 @@
             +Muestra 3 listas enumeradas distintas cada una compuestas por los elementos "xxx", "yyy" y "zzz"
              respectivamente.
 
+
+
         -<blockquote>
          <p>1. xxx<br />
          2. yyy<br />
@@ -74,6 +86,8 @@
 
             +Muestra una "lista enumerada" compuesta por los elementos "xxx", "yyy" y "zzz" pero solo a nivel visual
              porque no es una lista sino un bloque de cita.
+
+
 
     D_  -<table border="1" width="300">
         <tr>
@@ -93,6 +107,8 @@
             +Muestra una tabla con bordes (debido al atributo border) con columnas llamadas "Columna 1" y
             "Columna 2" con celdas llamadas "celda 1", "celda 2", "celda 3" y "celda 4", con la tabla teniendo
             un ancho de "300" pixeles (dado por el atributo width).
+
+
 
         -<table border="1" width="300">
          <tr>
@@ -129,7 +145,8 @@
             +Muestra una tabla de 200 pixeles de ancho donde cada celda esta vacia pero coloreada con el tono de gris claro
              "#dddddd" en formato hexadecimal.
 
-        <table width="200">
+
+        -<table width="200">
         <tr>
             <td colspan="3"><div align="center">Título</div></td>
         </tr>
@@ -147,3 +164,183 @@
 
             +Muestra exactamente la misma tabla que en el segmento anterior solo que no utiliza la etiqueta <caption> para el titulo de la
              tabla y lo simula usando atributos de la etiqueta <td>.
+
+    F_ -<table width="200">
+            <tr>
+                <td colspan="3"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+        </table>
+
+            +Muestra una tabla de 200 pixeles de ancho donde cada celda esta vacia pero coloreada con el tono de gris claro
+             "#dddddd" en formato hexadecimal, simulando el titulo con atributos de la etiqueta <td>, con una de sus celdas
+              ocupando 2 filas de alto debido al atributo rowspan.
+
+        -<table width="200">
+            <tr>
+                <td colspan="3"><div
+                align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+        </table> 
+
+            +Muestra una tabla con el mismo formato y estilo que la del segmento anterior pero con una de sus celdas
+             ocupando 2 columnas de ancho debido al atributo colspan.
+    
+
+
+    G_ -<table width="200" border="1">
+            <tr>
+                <td colspan="3"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td colspan="2"rowspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="50%">&nbsp;</td>
+            </tr>
+        </table>
+
+            +Muestra una tabla de 200 pixeles de ancho con bordes, donde cada celda esta vacia, simulando el titulo con atributos
+             de la etiqueta <td>, con una de sus celdas ocupando 2 filas de alto y 2 columnas de ancho debido a los atributos rowspan y colspan.
+        
+
+       -<table width="200" border="1" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="2"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td rowspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="50%">&nbsp;</td>
+            </tr>
+        </table>
+
+            +Muestra una tabla con el mismo formato y estilo que la del segmento anterior pero con los atributos cellpadding y cellspacing
+             especificando que no debe haber espacio entre las celdas ni entre el borde de la tabla y las celdas, ademas que en lugar de
+             que la tabla ya no es de 3 columnas sino de 2, y ahora la celda expandida solo se crea con el atributo rowspan.
+
+
+    H_ -<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+        <fieldset>
+        <legend>LOGIN</legend>
+        Usuario: <input type="text" id="usu1" name="usu1" value="xxx" />
+        <br/>
+        Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+        </fieldset>
+        <input type="submit" id="boton1" name="boton1" value="Enviar" />
+        </form>
+
+            +Muestra un formulario con el titulo "LOGIN" que contiene dos campos de texto, uno para el usuario y otro para la clave,
+             ambos con el valor "xxx" por defecto, y un boton de envio que envia el mismo a "procesar.php" teniendo como objetivo
+             una nueva pestaña.
+
+
+
+        <form id="form2" name="form2" action="" method="get" target="_blank">
+            LOGIN<br />
+            <label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+            <label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+            <input type="submit" id="boton2" name="boton2" value="Enviar" />
+        </form>
+
+            +Muestra un formulario con la misma estructura que el anterior, solo que ya no tiene un marco alrededor del mismo porque
+             no se utiliza la etiqueta <fieldset> y los campos no poseen valor por defecto porque no tienen el atributo value.
+
+
+
+        <form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="post" target="_blank">
+            <fieldset>
+                <legend>LOGIN</legend>
+                Usuario: <input type="text" id="usu3" name="usu3" /><br />
+                Clave: <input type="password" id="clave3" name="clave3" />
+            </fieldset>
+            <input type="reset" id="boton3" name="boton3" value="Enviar" />
+        </form>
+
+            +Muestra un formulario con la misma estructura que el anterior, solo que ahora el envio se hace a un correo electronico,
+             el boton de envio es de tipo "reset" por lo que al hacer click en el mismo no envia el formulario sino que lo reinicia y 
+             ademas a nivel visual se le incorporo una leyenda al formulario y la etiqueta <fieldset> usada en el primer segmento
+             ya no abarca todo el formulario.
+
+
+    I_ -<label>Botón 1
+            <button type="button" name="boton1" id="boton1">
+            <img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+            <b>CLICK AQUÍ</b></button>
+        </label>
+
+            +Muestra un boton con el texto "CLICK AQUÍ" y una imagen (con un texto alternativo que dice "Botón con imagen") 
+             que al hacer click no hace nada porque el boton no estaasociado a ningun tipo de accion.
+
+
+       -<label>Botón 2
+            <input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+        </label>
+
+            +Muestra un boton con el texto "CLICK AQUÍ" que al hacer click no hace nada porque el boton no esta asociado a nada,
+             a diferencia del segmento de anterior, en este no hay imagen.
+
+
+    J_ -<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+        <label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+
+            +Muestra dos botones de radio, uno con la opcion "X" y otro con la opcion "Y", ambos de igual nombre por lo que son excluyentes.
+
+
+        -<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+         <label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+
+            +Muestra exactamente los mismos botones de radio que en el segmento anterior pero con un nombre distinto para cada uno,
+             lo cual hace que al seleccionar uno no se deseleccione el otro.
+
+
+
+    K_ -<select name="lista">
+        <optgroup label="Caso 1">
+        <option>Mayo</option>
+        <option>Junio</option>
+        </optgroup>
+        <optgroup label="Caso 2">
+        <option>Mayo</option>
+        <option>Junio</option>
+        </optgroup>
+        </select>
+
+            +Muestra un menu desplegable con dos grupos de opciones(caso 1 y caso2), cada uno con las opciones "Mayo" y "Junio", donde al seleccionar
+             una de las opciones se selecciona la opcion del grupo correspondiente.
+
+        
+       -<select name="lista[]" multiple="multiple">
+        <optgroup label=" Caso 1">
+        <option>Mayo</option>
+        <option>Junio</option>
+        </optgroup>
+        <optgroup label=" Caso 2">
+        <option>Mayo</option>
+        <option>Junio</option>
+        </optgroup>
+        </select>
+
+            +Muestra las mismas opciones que en el segmento anterior, solo que ahora todas ya estan desplegadas y con la posibilidad de seleccionar
+             varias opciones a la vez debido al atributo multiple, lo cual hace que al seleccionar una opcion del grupo 1 se pueda seleccionar una
+             opcion del grupo 2 sin que se deseleccione la primera.
