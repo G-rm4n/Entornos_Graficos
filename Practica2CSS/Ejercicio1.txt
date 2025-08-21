@@ -1,0 +1,95 @@
+1_CSS es una tecnologia que permite controlar la apariencia de un sitio web, principalmente se
+ utiliza para definir el estilo de los elementos de un documento HTML que componen la estructura de una
+ pagina web.
+
+
+2_Las reglas que CSS utiliza para las declaraciones de estilo funcionan de la siguiente manera:
+    - se define un selector el cual es el elemento HTML al que se le aplicara el estilo.
+    - se define una declaracion entre llaves que contiene una propiedad(que es el aspecto que se
+      quiere modificar) y un valor (que es el nuevo aspecto que se le asignara a la propiedad)
+      seguido de punto y coma.
+    - se pueden definir varias declaraciones separadas por punto y coma dentro de las llaves.
+    
+    ej:
+        h1{
+            background-color;blue;
+            color:black;
+        }
+
+
+3_Las formas de dar estilo a un documento HTML son:
+    - Inline: el estilo se aplica directamente al elemento utilizando el atributo "style" dentro de la etiqueta
+        HTML seguido por el nombre de la propiedad y su valor.
+    
+    - Interno: se un bloque <style> dentro de la etiqueta <head> del documento HTML, donde se definen
+        las reglas css que se aplicaran a los elementos del documento.
+
+    - Externo: Se crea un archivo CSS separado que contiene todas las reglas de estilo que se aplicaran
+        al documento HMTL y se vincula al mismo utilizando la etiqueta <link> dentro de la etiqueta
+        <head> del documento HTML. El atributo "href" de la etiqueta <link> especifica la ruta del archivo CSS.
+
+        ej:
+            <link rel="stylesheet" href="estilos.css" type="text/css">
+
+
+4_Los distintos tipos de selectores mas utilizados en CSS son:
+
+    -selectores de tipo: seleccionan todos los elementos de un tipo especifico(se utilizan colocando simplemente
+        el nombre del tipo de elemento).
+        ej: p, h1, div.
+    
+    -selectores de clase: seleccionan todos los elementos que tienen una clase especifica(se utilizan colocando
+        un punto seguido del nombre de la clase).
+        ej: .small.
+    
+    -selectores de id: seleccionan un elemento con un id especifico(se utilizan colocando una almohadilla
+        seguido del nombre del id).
+        ej: #header.
+    
+    -selectores de atributo: seleccionan elementos que tienen un atributo especifico(se utilizan colocando
+        el nombre del atributo entre corchetes).
+        ej: [type="text"].
+
+    -selectores de descendientes: seleccionan elementos que son descendientes de un elemento especifico
+        (se utilizan colocando el nombre del elemento padre seguido de un espacio y luego el nombre del
+        elemento hijo).
+        ej: div p.
+    
+    -selectores multiples: seleccionan varios elementos al mismo tiempo(se utilizan colocando los selectores
+        separados por comas).
+        ej: h1, p, div.
+    
+    -selectores de pseudo-clases: seleccionan elementos en un estado especifico(se utilizan colocando
+        dos puntos seguido del nombre de la pseudo-clase).
+        ej: a:hover, li:first-child.
+
+5_Una pseudo-clase es clase que se le aplica a un elemento en un estado o contexto especificio
+    (por ejemplo, cuando el usuario pasa el mouse sobre un enlace o cuando un elemento es el primer hijo
+    de su padre) que no se puede agregar manualmente al elemento HTML.
+    Las pseudo-clases permiten aplicar estilos a elementos en situaciones especificas sin necesidad de
+    modificar el HTML.
+
+    se utilizan colocando dos puntos seguido del nombre de la pseudo-clase.
+
+    Las pseudo-clases mas utilizadas en vinculos son:
+    - :link: se aplica a un enlace que no ha sido visitado.
+    - :visited: se aplica a un enlace que ya ha sido visitado.
+    - :hover: se aplica a un enlace cuando el usuario pasa el mouse sobre el.
+
+6_La herencia es una caracteristica de CSS que permite que los elementos que estan dentro de otros elementos
+    hereden las propiedades de estilo de los elementos donde estan contenidos. es decir, si al <body> se le aplica
+    un color de fondo, todos los elementos dentro del <body> heredaran ese color de fondo.
+
+
+7_El proceso denominado cascada en CSS consiste en la forma en que se aplican las reglas de estilo
+    a los elementos de un documento HTML. Cuando hay varias reglas que se aplican a un mismo elemento,
+    la cascada determina cual regla tiene prioridad y se aplica al elemento. La cascada sigue un orden de
+    prioridad basado en 3 factores:
+
+    - Especificidad: las reglas mas especificas tienen prioridad sobre las menos especificas.
+    
+    - Orden de aparicion: si dos reglas tienen la misma especificidad, la que aparece mas abajo en el
+      documento CSS tiene prioridad.
+
+    - Importancia: las reglas marcadas como importantes (utilizando la palabra clave "!important") tienen
+      prioridad sobre todas las demas reglas, independientemente de su especificidad o orden de aparicion.

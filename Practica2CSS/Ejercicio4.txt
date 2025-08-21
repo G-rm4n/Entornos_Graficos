@@ -1,0 +1,56 @@
+Reglas declaradas:
+    * {color:green; } 
+    a:link {color:gray } 
+    a:visited{color:blue } 
+    a:hover {color:fuchsia } 
+    a:active {color:red } 
+    p { font-family: arial,helvetica;
+        font-size: 10px;color:black; 
+    } 
+    .contenido{font-size: 14px;font-weight: bold; }
+
+Segmento de codigo HTML 1:
+    <body>
+    <p class="contenido" style="font-weight: normal;"> Este es un texto ...............</p>
+    <table> 
+        <tr> 
+            <td>Y esta es una tabla.......</td>
+        </tr> 
+        <tr> <td><a href="http://www.google.com.ar">con un enlace</a></td>
+        </tr> 
+    </table>
+    </body>
+
+segmento de codigo HTML 2:
+    <body class="contenido"> 
+        <p> Este es un texto................</p> 
+        <table> 
+            <tr> 
+                <td>Y esta es una tabla.......</td> 
+            </tr> 
+            <tr> 
+                <td><a href="http://www.google.com.ar">con un enlace</a></td>
+            </tr> 
+        </table> 
+    </body>
+
+Efectos y diferencias:
+    Ambos segmentos de codigo HTML producen el mismo resultado visual en un navegador web, pero
+    hay algunas diferencias en la forma en que se aplican los estilos CSS:
+
+    1_ En el primer segmento de codigo HTML, el atributo "style" se utiliza para aplicar un estilo
+       en linea al elemento <p>, estableciendo el peso de la fuente en "normal". Esto anula el
+       estilo definido en la clase "contenido" que establece el peso de la fuente en "bold".
+       Por lo tanto, el texto dentro del elemento <p> se muestra con un peso de fuente normal.
+    
+    2_ En el segundo segmento de codigo HTML, la clase "contenido" se aplica al elemento <body>,
+       lo que significa que todos los elementos dentro del cuerpo heredan los estilos definidos
+        en la clase "contenido". Por lo tanto, el texto dentro del elemento <p> se muestra con
+        un tamaño de fuente de 14px y un peso de fuente en negrita (bold), ya que no hay
+        estilos en linea que anulen estos valores.
+    
+    cabe mencionar que en ambos casos, el color del parrafo p es negro ya que la regla especifica que le da ese
+    color al mismo se superpone a la que le da el color verde a todos los elementos.
+
+    lo mismo ocurre con el link, en el cual los colores que se aplican en funcion de la subclase se superponen
+    al verde aplicado de forma general al ser mas especificio.

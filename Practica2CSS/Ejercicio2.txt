@@ -1,0 +1,69 @@
+Segmento de codigo:
+    p#normal { 
+        font-family: arial,helvetica; 
+        font-size: 11px; 
+        font-weight: bold; 
+        }
+
+    *#destacado {
+         border-style: solid; 
+         border-color: blue; 
+         border-width: 2px; 
+         } 
+
+    #distinto {
+         background-color: #9EC7EB; 
+         color: red; 
+         } 
+
+    <p id="normal">Este es un párrafo</p>
+
+    <p id="destacado">Este es otro párrafo</p>
+
+    <table id="destacado">
+        <tr>
+            <td>Esta es una tabla</td>
+        </tr>
+    </table>
+
+    <p id="distinto">Este es el último párrafo</p>
+
+Las delcaraciones del segumento de codigo anterior se van a describir en forma descendente:
+
+    1_ Declaracion:
+        p#normal { 
+            font-family: arial,helvetica; 
+            font-size: 11px; 
+            font-weight: bold; 
+        }
+
+        aplicacion de regla: selector "p#normal".
+
+        efecto:
+            Genera que todos los elementos <p> con id "normal" posean la fuente arial o helvetica,
+            con un tamaño de 11px y un peso de fuente en negrita.
+
+    2_ Declaracion:
+        *#destacado {
+            border-style: solid; 
+            border-color: blue; 
+            border-width: 2px; 
+        }
+
+        aplicacion de regla: selector "*#destacado".
+
+        efecto:
+            aplica un bode de estilo solido de color azul y de 2px de ancho a todos los
+            elemento con id "destacado", sin importar el tipo.
+
+    3_ Declaracion:
+        #distinto { 
+            background-color: #9EC7EB; 
+            color: red; 
+        }
+
+        aplicacion de regla: selector "#distinto".
+
+        efecto:
+            establece un color de fondo azul claro (#9EC7EB) y un color de texto rojo para el
+            elemento con id "distinto".

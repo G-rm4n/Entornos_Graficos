@@ -1,0 +1,52 @@
+segmento de codigo:
+    p.quitar { 
+        color: red; 
+    }
+
+    *.desarrollo {
+        font-size: 8px; 
+    }
+
+    .importante { 
+        font-size: 20px; 
+    }
+
+    <p class="desarrollo">  En este primer párrafo trataremos lo siguiente: <br />xxxxxxxxxxxxxxxxxxxxxxxxx </p>
+    <p class="quitar"> Este párrafo debe ser quitado de la obra... <br />xxxxxxxxxxxxxxxxxxxxxxxxx </p> 
+    <p > En este otro párrafo trataremos otro tema:<br /> xxxxxxxxxxxxxxxxxxxxxxxxx </p>
+    <p class="importante"> Y este es el párrafo más importante de la obra... <br />xxxxxxxxxxxxxxxxxxxxxxxxx </ p>
+    <h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>  
+    <p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+
+
+Las declaraciones del segmento de codigo anterior se van a describir en forma descendente:
+
+    1_ Declaracion:
+        p.quitar { 
+            color: red; 
+        }
+
+        aplicacion de regla: selector "p.quitar".
+
+        efecto:
+            Genera que todos los elementos <p> con clase "quitar" tengan el texto en color rojo.
+
+    2_ Declaracion:
+        *.desarrollo {
+            font-size: 8px; 
+        }
+
+        aplicacion de regla: selector "*.desarrollo".
+
+        efecto:
+            Aplica un tamaño de fuente de 8px a todos los elementos con clase "desarrollo", sin importar el tipo.
+
+    3_ Declaracion:
+        .importante { 
+            font-size: 20px; 
+        }
+
+        aplicacion de regla: selector ".importante".
+
+        efecto:
+            Genera que todos los elementos con clase "importante" tengan un tamaño de fuente de 20px.

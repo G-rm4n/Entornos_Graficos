@@ -1,0 +1,48 @@
+1_
+    h1,h2,h3,h4,h5,h6 {
+        color:red;
+    }
+
+2_
+    div p [href]{
+        color:blue;
+    }
+
+3_
+    #ultimo ul  {
+        color:yellow;
+    }
+
+    #ultimo ul a[href]{
+        color:blue;
+    }
+
+4_
+    div #importante{
+        color:green;
+    }
+
+    h1#importante,
+    h2#importante,
+    h3#importante,
+    h4#importante,
+    h5#importante,
+    h6#importante{
+        color:red;
+    }
+
+5_
+    h1[title]{
+        color:blue;
+    }
+
+6_ 
+    ol a:link{
+        color:blue;
+        text-decoration: none;
+    }
+
+    ol a:visited{
+        color:purple;
+        text-decoration: none;
+    }
