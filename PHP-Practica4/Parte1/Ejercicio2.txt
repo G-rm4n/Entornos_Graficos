@@ -1,0 +1,10 @@
+a_ Los codigos a nivel de salida por pantalla son equivalente porque producen la misma,
+    pero utilizan distintas estructuras de control para producirlas.
+
+b_ De igual manera que en el caso anterior, sus salidas por pantalla son equivalentes,
+    pero utilizan la estructura for de distintas maneras, de forma mas o menos compactas,
+    o incluyendo la condicion de cierre dentro de las sentencias con un if y break.
+
+c_ Ambos codigos son equivalente tambien en su salida por pantalla, solo que uno utiliza 
+    if para determinar que mostrar y el otro utiliza la el switch.
+

@@ -1,0 +1,23 @@
+a_ La salida del segmento de codigo es:
+    ·por pantalla:"bar1"
+    ·variables:
+        $matriz(
+            "X"=>"bar"
+            12=>true
+        )
+
+b_ La salida del segmento de codigo es:
+    ·por pantalla:"5942"
+    ·variables: 
+        $matriz(
+            unamatriz(
+                6=>5
+                13=>9
+                "a"=>12
+            )
+        )
+
+
+c_ La salida del segmento de codigo es:
+    ·por pantalla: nada
+    ·variables: ninguna

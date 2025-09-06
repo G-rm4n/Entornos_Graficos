@@ -1,0 +1,6 @@
+a_ El codigo que se muestra sirve para mostrar por pantalla una tabla con 2 columnas
+    y 5 filas, donde la misma tiene un borde declarado dentro de su etiqueta junto a
+    su ancho.
+
+b_El codigo que se muestra sirve para atraves de un formulario determinar si quien ingresa
+    su edad es mayor o menor de edad.

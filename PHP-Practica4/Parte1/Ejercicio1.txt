@@ -1,0 +1,24 @@
+Variables y tipos:
+        identificador: "$a"  | tipo: Booleano
+        identificador: "$b"  | tipo: String
+        identificador: "$c"  | tipo: String
+        identificador: "$d"  | tipo: Int
+
+Operadores:
+        · "="
+        · "*"
+        · "+="
+        · "++"
+
+funciones y parametros utilizados:
+        funcion: "doble"    | parametros: "$d"      | descripccion: Devuelve el doble del parametro.
+        funcion: "gettype"  | parametros: "$a $b $c $d" | descripccion: devuelve el tipo de dato del parametro.
+        funcion: "is_int"   | parametros: "$d"      | descripccion: devuelve True si el parametro es de tipo int, sino devuelve false.
+        funcion: "is_string"    | parametros: "$a"      | descripccion: devuelve true si el parametro es de tipo string, sino devuelve false.
+
+Estructuras de control:
+        ·"if(condicion) sentencia;"
+        ·"(condicion)? sentencia1: sentencia2;"
+
+Salida por pantalla:
+        ·"booleanstringstringinteger1xyzxyz184444"

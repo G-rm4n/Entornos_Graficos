@@ -1,0 +1,1 @@
+Los codigos presentados son equivalentes entre si pues acaban instanciando el mismo arreglo, solo que de formas distintas.

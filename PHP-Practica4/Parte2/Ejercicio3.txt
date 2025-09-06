@@ -1,0 +1,8 @@
+a_ salidas generadas:
+    ·por pantalla: "Has entrado en esta pagina a las (hora ejecucion) horas, con (minuto de ejercucion) minutos y (segundo de ejecucion) segundos, del (dia ejecucion)/(mes ejecucion)/(año ejecucion)"
+    ·variables:
+        -$fun: fecha y hora de ejecucion(arreglo).
+
+b_ salidas generadas:
+    ·por pantalla: "5+6=11"
+    ·variables: no utilizadas, solo literales.

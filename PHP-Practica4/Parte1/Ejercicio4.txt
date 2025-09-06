@@ -1,0 +1,9 @@
+El codigo produce las siguientes salidas:
+    ·"Warning: Undefined variable $flor in C:\xampp\htdocs\index.php on line 2"
+    ·"Warning: Undefined variable $color in C:\xampp\htdocs\index.php on line 2"
+    ·"El El clavel blanco"
+
+Las mismas ocurren debido a que previo al primero echo del codigo "$flor" y "$color"
+aun no estan definidas, y la ultima salida ocurre debido a que previo al uso de otro echo
+se incluyo el segmento de codigo presente en el archivo datos.php donde se definen estas variables.
+
